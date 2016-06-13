@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+           
+            min-width:400px;
+            min-height:200px;
+            background:#ccc;
+            display:inline-block;
+            position:relative;
+            overflow: hidden;
+            
+        }
+        .leftTop{
+            width:0;
+            height:0;
+            border:50px solid #fc0;
+            position:absolute;
+            top:-50px;
+            left:-50px;
+            border-radius: 50px;
+        }
+        .bottomRight{
+            width:0;
+            height:0;
+            border:50px solid #fc0;
+            position:absolute;
+            bottom:-50px;
+            right:-50px;
+             border-radius: 50px;
+            
+        }
+    </style>
+</head>
+<body style="position:absolute;width:100%;height:100%;overflow:hidden">
+    <div style="
+            display: flex;
+            flex-direction: column;
+             justify-content: center;
+             align-items: center;
+            height:100%;
+            width:100%">
+        <div class="container">
+            <span class="leftTop"></span>
+            <span class="bottomRight"></span>
+            <div style="height:500px;width:400px"></div>
+        </div>
+    </div>
+    
+</body>
+<!-- <body>
+      <!--<div class="container" style="width:400px;height:200px;position:absolute;top:50%;margin-top:-100px;left:50%;margin-left:-200px;">
+            <span class="leftTop"></span>
+            <span class="bottomRight"></span>
+        </div>-->
+       <!--  <div class="container" style="position:absolute;top:50%;transform: translate(-50%,-50%);left:50%">
+            <span class="leftTop"></span>
+            <span class="bottomRight"></span>
+        </div> -->
+</body> -->
+</html>
